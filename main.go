@@ -77,7 +77,6 @@ func main() {
 
 			if _, err := os.Stat(mod.Dir); os.IsNotExist(err) {
 				fmt.Printf("Error! %s module path does not exist, check $GOPATH/pkg/mod", mod.Dir)
-				os.Exit(1)
 			}
 
 			// Build list of files to module path source to project vendor folder
